@@ -1,4 +1,4 @@
-package jerry.demo.btpayment.payanywhere;
+package jerry.demo.payment.payanywhere;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package jerry.demo.btpayment.printerlibs;
+package jerry.yang.printerlib;
 
 import org.junit.Test;
 

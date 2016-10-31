@@ -1,4 +1,4 @@
-package jerry.demo.btpayment.printerlibs;
+package jerry.demo.payment.payanywhere;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("jerry.demo.btpayment.printerlibs.test", appContext.getPackageName());
+        assertEquals("jerry.demo.btpayment.payanywhere", appContext.getPackageName());
     }
 }
