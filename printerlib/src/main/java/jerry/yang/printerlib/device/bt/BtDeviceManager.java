@@ -8,9 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 import java.util.ArrayList;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
 
-import jerry.yang.printerlib.broadcast.BroadcastMsg;
 import jerry.yang.printerlib.device.Device;
 import jerry.yang.printerlib.device.DeviceManager;
 import jerry.yang.printerlib.device.DeviceManagerCallBack;

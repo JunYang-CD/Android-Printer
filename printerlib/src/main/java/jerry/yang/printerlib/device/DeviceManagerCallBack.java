@@ -5,5 +5,5 @@ package jerry.yang.printerlib.device;
  */
 
 public interface DeviceManagerCallBack {
-    public abstract void newDeviceFound(Device device);
+    void newDeviceFound(Device device);
 }

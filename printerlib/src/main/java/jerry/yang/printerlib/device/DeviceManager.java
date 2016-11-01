@@ -6,10 +6,10 @@ package jerry.yang.printerlib.device;
 
 public interface DeviceManager {
 
-    public abstract void setCallBack(DeviceManagerCallBack callBack);
-    public abstract void removeCallBack(DeviceManagerCallBack callBack);
-    public abstract void startDeviceDiscovery();
-    public abstract void cancelDeviceDiscovery();
-    public abstract void connect();
-    public abstract void disConnect();
+    void setCallBack(DeviceManagerCallBack callBack);
+    void removeCallBack(DeviceManagerCallBack callBack);
+    void startDeviceDiscovery();
+    void cancelDeviceDiscovery();
+    void connect();
+    void disConnect();
 }
