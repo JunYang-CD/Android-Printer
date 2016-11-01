@@ -19,6 +19,12 @@ public class Device {
     private String port;
     private String brand;
 
+    public Device(String address, String name, String port){
+        this.address = address;
+        this.name = name;
+        this.port = port;
+    }
+
     public Type getType() {
         return type;
     }
@@ -58,6 +64,7 @@ public class Device {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
 
 
 }

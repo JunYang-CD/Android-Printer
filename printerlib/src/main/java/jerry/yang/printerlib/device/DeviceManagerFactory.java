@@ -1,5 +1,7 @@
 package jerry.yang.printerlib.device;
 
+import android.content.Context;
+
 import jerry.yang.printerlib.device.bt.BtDeviceManager;
 
 /**
@@ -19,11 +21,11 @@ public class DeviceManagerFactory {
         return instance;
     }
 
-    public static DeviceManager getDeviceManager(int type){
+    public static DeviceManager getDeviceManager(Context context, int type){
         DeviceManager deviceManager = null;
         switch (type){
             case Device.Type.BT:
-                deviceManager = BtDeviceManager.getInstance();
+                deviceManager = BtDeviceManager.getInstance(context);
                 break;
             case Device.Type.USB:
                 break;
