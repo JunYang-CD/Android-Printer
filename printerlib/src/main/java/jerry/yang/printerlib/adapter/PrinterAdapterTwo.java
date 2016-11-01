@@ -22,6 +22,11 @@ public class PrinterAdapterTwo extends PrinterAdapter {
     }
 
     @Override
+    public void disconnect(Device device) {
+
+    }
+
+    @Override
     public void printLine(String str) {
 
     }

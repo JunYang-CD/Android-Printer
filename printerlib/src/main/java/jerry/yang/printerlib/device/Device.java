@@ -13,7 +13,7 @@ public class Device {
     }
 
 
-    private Type type;
+    private int type;
     private String name;
     private String address;
     private String port;
@@ -25,11 +25,11 @@ public class Device {
         this.port = port;
     }
 
-    public Type getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(int type) {
         this.type = type;
     }
 

@@ -22,11 +22,22 @@ public class PrinterAdapterOne extends PrinterAdapter {
 
     @Override
     public void printLine(String str) {
+        if (null != connectedDevice) {
+        }
     }
 
     @Override
-    public void connect(Device device){
+    public void connect(Device device) {
+        connectedDevice = device;
+    }
 
+    @Override
+    public void disconnect(Device device) {
+        if (null != device && connectedDevice == device) {
+
+        } else if (null != connectedDevice) {
+            connectedDevice = null;
+        }
     }
 
 

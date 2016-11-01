@@ -22,6 +22,7 @@ public abstract class PrinterAdapter implements DeviceManagerCallBack {
     protected ArrayList<Device> devices;
     protected ArrayList capabilities;
     protected Object deviceListMutex;
+    protected Device connectedDevice;
 
     public PrinterAdapter(Context context){
         this.context = context;
@@ -31,6 +32,7 @@ public abstract class PrinterAdapter implements DeviceManagerCallBack {
     }
 
     public abstract void connect(Device device);
+    public abstract void disconnect(Device device);
     public abstract void printLine(String str);
 
     public ArrayList<Integer> getSupportTypes() {
