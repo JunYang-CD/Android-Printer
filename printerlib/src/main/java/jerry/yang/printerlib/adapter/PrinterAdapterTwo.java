@@ -13,7 +13,12 @@ import jerry.yang.printerlib.device.Device;
 public class PrinterAdapterTwo extends PrinterAdapter {
 
     public PrinterAdapterTwo(Context context){
-        this.context = context;
+        super(context);
+    }
+
+    @Override
+    public void connect(Device device) {
+
     }
 
     @Override
@@ -21,13 +26,4 @@ public class PrinterAdapterTwo extends PrinterAdapter {
 
     }
 
-    @Override
-    public ArrayList<Integer> getSupportTypes() {
-        return null;
-    }
-
-    @Override
-    public void newDeviceFound(Device device) {
-
-    }
 }

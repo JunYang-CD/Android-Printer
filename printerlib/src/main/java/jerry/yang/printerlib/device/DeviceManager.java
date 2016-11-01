@@ -10,6 +10,4 @@ public interface DeviceManager {
     void removeCallBack(DeviceManagerCallBack callBack);
     void startDeviceDiscovery();
     void cancelDeviceDiscovery();
-    void connect();
-    void disConnect();
 }

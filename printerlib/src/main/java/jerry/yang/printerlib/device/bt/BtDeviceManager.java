@@ -69,16 +69,6 @@ public class BtDeviceManager implements DeviceManager {
         context.unregisterReceiver(blueToothReceiever);
     }
 
-    @Override
-    public void connect() {
-
-    }
-
-    @Override
-    public void disConnect() {
-
-    }
-
     private class BlueToothReceiver extends BroadcastReceiver{
 
         @Override
