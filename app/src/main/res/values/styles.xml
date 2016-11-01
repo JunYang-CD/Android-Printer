@@ -8,4 +8,35 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PaymentTheme">
+        <item name="background">@color/blue1</item>
+    </style>
+
+    <style name="PaymentTheme.Header" parent="PaymentTheme">
+        <item name="android:background">@color/blue1</item>
+        <item name="android:layout_height">@dimen/header_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="PaymentTheme.Footer" parent="PaymentTheme">
+        <item name="android:background">@color/blue1</item>
+        <item name="android:layout_height">@dimen/footer_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="PaymentTheme.Header.Text" parent="PaymentTheme.Header">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PaymentTheme.Footer.Icon" parent="PaymentTheme.Footer">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/footer_bar_icon_width</item>
+        <item name="android:layout_height">@dimen/footer_bar_icon_height</item>
+    </style>
+
 </resources>
