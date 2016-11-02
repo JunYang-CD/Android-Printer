@@ -6,6 +6,10 @@
         <variable
             name="viewModel"
             type="jerry.demo.payment.payanywhere.MainActivityViewModel" />
+
+        <variable
+            name="controller"
+            type="jerry.demo.payment.payanywhere.MainActivity" />
     </data>
 
     <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
@@ -25,12 +29,6 @@
                 android:text="@{viewModel.headerText}" />
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Hello World!" />
-
 
         <LinearLayout
             android:id="@+id/footer_bar"
@@ -44,8 +42,10 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/paymentTabBtn"
                     style="@style/PaymentTheme.Footer.Icon"
                     android:layout_centerInParent="true"
+                    android:onClick="@{() -> controller.onFirstTabClicked()}"
                     android:src="@drawable/ic_action_name" />
 
             </RelativeLayout>
@@ -56,8 +56,10 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/devicesTabBtn"
                     style="@style/PaymentTheme.Footer.Icon"
                     android:layout_centerInParent="true"
+                    android:onClick="@{() -> controller.onSecondTabClicked()}"
                     android:src="@drawable/ic_action_name" />
 
 
@@ -69,12 +71,26 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/settingTabBtn"
                     style="@style/PaymentTheme.Footer.Icon"
                     android:layout_centerInParent="true"
+                    android:onClick="@{() -> controller.onThirdTabClicked()}"
                     android:src="@drawable/ic_action_name" />
 
             </RelativeLayout>
 
         </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer_bar"
+            android:layout_below="@id/header_bar"
+            android:layout_centerInParent="true"
+            android:background="@color/gray1">
+
+
+        </FrameLayout>
     </RelativeLayout>
 </layout>
