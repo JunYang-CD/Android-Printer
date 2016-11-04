@@ -2,7 +2,6 @@ package jerry.demo.payment.payanywhere;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
-import android.databinding.ObservableField;
 
 /**
  * Created by jerry on 11/1/16.

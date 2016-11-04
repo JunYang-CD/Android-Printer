@@ -66,4 +66,8 @@ public abstract class PrinterAdapter implements DeviceManagerCallBack {
         context.sendBroadcast(new Intent(BroadcastMsg.NEW_DEVICE_FOUND));
     }
 
+    public ArrayList<Device> getList(){
+        return devices;
+    }
+
 }

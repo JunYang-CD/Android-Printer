@@ -54,9 +54,9 @@ public class BtDeviceManager implements DeviceManager {
 
     @Override
     public void startDeviceDiscovery() {
-        cancelDeviceDiscovery();
-
         IntentFilter intentFilter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+        context.registerReceiver(blueToothReceiever, intentFilter);
+        cancelDeviceDiscovery();
         context.registerReceiver(blueToothReceiever, intentFilter);
 
         BluetoothAdapter.getDefaultAdapter().startDiscovery();
