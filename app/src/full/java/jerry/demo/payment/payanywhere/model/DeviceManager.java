@@ -23,7 +23,7 @@ import jerry.yang.printerlib.device.Device;
  * Created by jerry on 11/3/16.
  */
 
-public class DeviceManager {
+public class    DeviceManager {
     private static DeviceManager instance;
     private Context context;
     private DeviceBroadcastReceiver broadcastReceiver;
